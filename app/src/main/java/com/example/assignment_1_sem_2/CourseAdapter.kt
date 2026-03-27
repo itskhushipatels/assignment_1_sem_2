@@ -13,9 +13,7 @@ class CourseAdapter(
     private val onItemClick: (Course) -> Unit
 ) : RecyclerView.Adapter<CourseAdapter.CourseViewHolder>() {
 
-    /**
-     * ViewHolder class
-     */
+    // Adapter for course list
     class CourseViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val txtCode: TextView = view.findViewById(R.id.txtCode)
         val txtName: TextView = view.findViewById(R.id.txtName)
